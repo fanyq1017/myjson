@@ -63,7 +63,7 @@ int lept_parse(lept_value* v, const char* json) {
     v->type = LEPT_NULL;
     
     lept_parse_whitespace(&c);
-    int ret = lept_parse_value(&c, v) ; //改进的地方 记录解析玩value后的返回值
+    int ret = lept_parse_value(&c, v) ;/*  改进的地方 记录解析玩value后的返回值 */
     if(ret == LEPT_PARSE_OK)
     {
         lept_parse_whitespace(&c);
